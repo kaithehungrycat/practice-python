@@ -10,8 +10,5 @@ print(blist)
 
 ######################################################################
 
-input_num = int(input("choose a number: "))
-lista = list(range(1, a+1))
-print([element for element in lista if input_num % element == 0])
-
-
+x = int(input("Enter number: "))
+print([a for a in range(1, x + 1) if x % a == 0])
