@@ -35,8 +35,11 @@ def compare(u1, u2):
     else:
         return "Invalid input!"
 
-    while True:
-        compare(u1, u2)
-        print(compare(user1, user2))
-        if input("Repeat the program? (Y/N)").strip().upper() != 'Y':
-            break
+
+print(compare(user1, user2))
+one_more_time = input("One more time?(Y/N)")
+
+while one_more_time == "Y":
+    compare(u1, u2)
+    if one_more_time == "N":
+        break
