@@ -17,3 +17,8 @@ print([aa for aa in a if aa < 5])
 #My list comprehension will go like this:
 #[number for number in number_list if number < 5]
 #You will get the same output.
+
+data = ("John", "Doe", 53.44)
+format_string = "Hello %s %s. Your current balance is $%s."
+
+print(format_string % data)
