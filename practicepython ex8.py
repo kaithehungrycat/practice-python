@@ -35,11 +35,12 @@ def compare(u1, u2):
     else:
         return "Invalid input!"
 
-
 print(compare(user1, user2))
+
+
 one_more_time = input("One more time?(Y/N)")
 
 while one_more_time == "Y":
-    compare(u1, u2)
-    if one_more_time == "N":
-        break
+    user1 = str(input("Rock, Scissors or Paper. What do you choose?"))
+    user2 = str(input("Rock, Scissors or Paper. What do you choose?"))
+    print(compare(user1, user2))
