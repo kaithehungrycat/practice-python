@@ -1,30 +1,27 @@
 import random
 
+
 a = random.randint(0, 9)
-
-b = int(input("Guess my number (from 0 to 9"))
-
+count = 5
+user_input =input("Guess my number (from 0 to 9)")
 print(a)
 
+while user_input == "exit":
+    break
 
-def guess(u1, u2):
-    if u1 == u2:
+while user_input != "exit" and count != 0:
+    user_input = int(user_input)
+    if user_input == a:
         print("U win")
-    elif u1 >= u2:
-        print("Go higher mate")
-    elif u1 <= u2:
-        print("Go lower mate")
-
-
-print(guess(a, b))
-
-one_more_time = "y"
-
-while one_more_time == "y":
-    u1 = input("GUESS MY NUMBER?")
-    print(a)
-    print(guess(a, u1))
-    if u1 == "exit":
+        print("you have only " + str(count) + " lives left")
         break
-
-
+    elif user_input >= a:
+        count -= 1
+        print("Go lower mate")
+        print("you have only " + str(count) + " lives left")
+        user_input = (input("Guess my number (from 0 to 9)"))
+    elif user_input <= a:
+        count -= 1
+        print("Go higher mate")
+        print("you have only " + str(count) + " lives left")
+        user_input = (input("Guess my number (from 0 to 9)"))

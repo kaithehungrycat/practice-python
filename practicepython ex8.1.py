@@ -5,12 +5,13 @@ u2 = int(input("Rock, Scissors or Paper. What do you choose?"))
 
 
 def compare(a, b):
-    if a == b in range(0, 3):
-        return "Tie"
-    elif a - b == 1 or a - b == -2 in range(0, 3):
-        return "Win A"
-    elif a - b == -1 or a - b == 2 in range(0, 3):
-        return "Win B"
+    if a in range(0, 3) and b in range(0, 3):
+        if a == b in range(0, 3):
+            return "Tie"
+        elif all([a - b == 1 or a - b == -2]):
+            return "Win A"
+        elif a - b == -1 or a - b == 2:
+            return "Win B"
     else:
         return "Invalid input"
 
