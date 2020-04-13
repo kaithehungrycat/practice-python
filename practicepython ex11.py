@@ -10,9 +10,15 @@ for element in a:
     if y % element == 0:
         b_list.append(element)
 
+
 print(b_list)
+
+if len(b_list) < 3:
+    print("Prime!")
+else:
+    print("Not prime")
 
 ######################################################################
 
-# x = int(input("Enter number: "))
-# print([a for a in range(1, x + 1) if x % a == 0])
+x = int(input("Enter number: "))
+print([a for a in range(1, x + 1) if x % a == 0])
