@@ -22,3 +22,9 @@ else:
 
 x = int(input("Enter number: "))
 print([a for a in range(1, x + 1) if x % a == 0])
+
+if len(a) < 3:
+    print("Prime!")
+else:
+    print("Not prime")
+
