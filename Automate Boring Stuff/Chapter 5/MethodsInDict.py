@@ -21,7 +21,7 @@
 #   sap['weight'] = '95 kg'
 
 
-#sap.setdefault('height', '190 cm') #same function will not change already existing key to '185 cm' for example
+###   !!!! sap.setdefault('height', '190 cm') #same function will not change already existing key to '185 cm' for example
 #print(sap)
 msg = 'Jaki byl ten dzien, co darowal co wzial'
 count = {}
