@@ -5,6 +5,8 @@ import re
 # oxR = xmasRegex.findall('12 lolo, 13 yup, 14 hahaha, 1 go_funk_yourself')
 # print(oxR)
 #
+# ^startwith $endwith
+# [abc] -search for abc // [^abc] - search all except abc
 # # vowRegex = re.compile(r'[^aeiouAEIOU]')
 # # papaya = vowRegex.findall('RoboCop eats food for kids. Damn FOOD FOR KIDS!')
 # # print(papaya)
@@ -28,11 +30,3 @@ import re
 # print(a)
 # print(ma)
 
-whoIsGreesdyRegex = re.compile(r'<.*?>')
-mo = whoIsGreesdyRegex.search('<this is it>you filthy motherhugger>')
-
-wellIamGreedy = re.compile(r'<.*>')
-ma = wellIamGreedy.search('<this is it>you filthy motherhugger>')
-
-print(mo)
-print(ma)
